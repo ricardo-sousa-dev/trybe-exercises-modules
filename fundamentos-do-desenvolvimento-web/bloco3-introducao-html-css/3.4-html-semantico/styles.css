@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #006800;
+  padding-top: 30px;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+header ul {
+  display: inline;
+}
+
+header li {
+  color: white;
+  display: inline-block;
+  padding: 30px;
+}
+
+h2,
+h3 {
+  color: green;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+p {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#small {
+  display: inline-block;
+  width: 300px;
+  margin-right: 30px;
+}
+
+ul {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.721);
+}
+
+section {
+  margin: 20px;
+  display: inline-block;
+}
+
+#principal {
+  display: inline-block;
+  width: 80%;
+  border-right: 2px solid green;
+  margin-right: 10px;
+}
+
+#classificacao {
+  display: inline-block;
+  width: 330px;
+}
+img {
+  width: 200px;
+  display: inline-block;
+}
+
+#biblio ol {
+  margin-top: 20px;
+}
+
+#biblio li {
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+aside {
+  display: inline-block;
+  width: 165px;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+.pisca {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  footer{
+      display: inline-block;
+      width: 100%;
+      margin: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: green;
+  }
+
+  

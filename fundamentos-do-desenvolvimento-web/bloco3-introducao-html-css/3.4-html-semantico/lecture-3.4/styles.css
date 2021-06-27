@@ -1,0 +1,208 @@
+* {
+<<<<<<< HEAD
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, li {
+  color: #323f3a;
+  font-size: 16px;
+}
+
+.trybe-green {
+  color: #11a36a;
+}
+
+.hero-title {
+  color: #0a7e51;
+  line-height: 55px;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.section-title {
+  line-height: 42px;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.picture {
+  border-radius: 100%;
+}
+
+.testemonial-name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.button {
+  color: #fff;
+  background-color: #11a36a;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.header {
+  background-image: url("images/smiling-image.jpg");
+  background-size: cover;
+  padding: 60px 30px 40px 30px;
+  background-position: 50% 25%;
+}
+
+.header-content {
+  max-width: 60%;
+  margin-left: 75px;
+}
+
+.header-content h1 {
+  margin-bottom: 30px;
+}
+
+.header-text {
+  max-width: 80%;
+  text-align: left;
+}
+
+.marketing {
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.marketing-text {
+  max-width: 60%;
+  margin: auto;
+}
+
+.student-testimonial {
+  padding: 30px 70px 90px 70px;
+  width: 80%;
+  margin: auto;
+}
+
+.student-container {
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.learning {
+  padding: 30px 70px;
+  background-color: #f5f5f5;
+  min-height: 350px;
+}
+
+.learning li {
+  list-style-type: square;
+  margin-bottom: 25px;
+}
+
+.learning-left {
+  float: left;
+  max-width: 35%;
+  margin-left: 60px;
+}
+
+.learning-right {
+  float: right;
+  margin-right: 60px;
+}
+
+.footer {
+  clear: both;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.footer h3 {
+  margin: 30px;
+=======
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  margin: 0 0 20px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.header {
+  background-color: rgb(10, 126, 81);
+  color: white;
+}
+
+.title-container {
+  padding: 10px 30px 0;
+}
+
+.navigation {
+  background-color: cornflowerblue;
+  padding: 0 30px;
+}
+
+.navigation ul {
+  padding: 5px 0;
+}
+
+.navigation li {
+  margin-right: 40px;
+  list-style-type: none;
+  display: inline;
+}
+
+.navigation li a {
+  color: white;
+  text-decoration: none;
+}
+  
+.content {
+  max-width: 1200px;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.main-content {
+  width: 66%;
+  display: inline-block;
+
+}
+
+.side-bar {
+  background-color: lightgrey;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article {
+  padding: 15px;
+}
+
+.article-small {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  padding: 15px;
+}
+
+.jobs {
+  margin-top: 40px
+>>>>>>> 4ce6254cb24b0b2d62a8e8078a8471a3d7cbf36c
+}

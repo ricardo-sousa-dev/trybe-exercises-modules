@@ -1,0 +1,56 @@
+PASSO A PASSO PARA CONECTAR REPOSITÓRIO LOCAL COM GITHUB
+
+1 - No terminal, instale o GIT pelo terminal
+LINUX: sudo apt-get install git-all
+MACOS: brew install git
+OBS: caso não possua brew, execute: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+2 - Configure sua identidade
+git config --global user.name "Seu nome"
+git config --global user.email seuemail@exemplo.br
+OBS: utilize o mesmo e-mail utilizado na conta do GitHub
+
+3 - Verificando a instalação e a configuração
+git --version
+git config --list
+
+4 - Gerando uma chave SSH
+ssh-keygen -t rsa -b 4096 -C "seuemail@gmail.com"
+OBS1 : Durante o processo irá aparecer escrito no terminal Enter a file in which to save the key , quando isso acontecer pressione Enter para aceitar a localização padrão /home/you/.ssh/id_rsa .
+OBS2 : Quando aparecer (Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter])
+digite uma senha segura.
+
+5 - Adicionando sua chave SSH ao ssh-agent
+- Inicie o agente primeiro com: eval "$(ssh-agent -s)"
+- Agora você deve adicionar sua chave privada SSH ao ssh-agent: ssh-add ~/.ssh/id_rsa
+
+6 - Copie a sua chave PÚBLICA e cole no seu GitHub
+Entre no seu GitHub e siga os passos abaixo:
+No canto superior direito do GitHub , clique na sua foto de perfil e clique em Settings ;
+Na barra lateral esquerda, clique em SSH and GPG keys ;
+Clique em New SSH key ou Add SSH key ;
+No campo Título , adicione um descrição para a nova chave;
+Cole sua chave dentro do campo Key ;
+Clique em Add SSH key ;
+Caso seja solicitado, confirme sua senha do Github.
+
+
+DAQUI PRA FRENTE, ESTEJA DENTRO DO DIRETÓRIO A SER SINCRONIZADO NO REPOSITÓRIO REMOTO
+
+7 - Iniciar um repositório Git dentro da pasta
+Crie um repositório local (mkdir) e execute: git init
+Verifique o status do git com: git status
+
+8 - add (stage) e commit 
+Considerando que você já tem pastas e arquivos dentro do seu repositório, é hora de adicionar ao stage e vomitar.
+Para adicionar todos os arquivos, execute: git add . ou git add meu_arquivo.js para adicionar apenas um arquivo.
+Para commitar, git commit -m "Mensagem sobre a alteração feita"
+
+9 - crie um repositório dentro do Github, pelo navegador, e pegue o endereço SSH para Conectar o repositório local com o remoto.
+Depois, execute: git remote add origin git@github.com:endereco.do.repositorio.git
+Verifique se tudo funcionou corretamente: git remote -v
+
+10 - Sincronizando os repositórios
+Os repositórios já estão criados e também já estão conectados, agora é a hora de enviar as alterações feitas no repositório local para o repositório remote.
+Para isso, certifique-se que as alterações já foram adicionadas e comitadas e então execute o seguinte comando: git push origin master
+Com isso, você está enviando as alterações feitas localmente para o a branch principal, master , do seu repositório remoto, origin .

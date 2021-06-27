@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+p {
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  color: white;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+margin: 10px;
+}
+
+#blocos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#bloco-imagens {
+  display: flex;
+  flex-direction: row;
+  width: 570px;
+}
+
+#card {
+  background-color: rgba(128, 128, 128, 0.212);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+}
+
+#card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#divisao {
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.212);
+  margin-bottom: 5px;
+}
+
+#rodape {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+}
+
+h4 {
+  font-family: sans-serif;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}

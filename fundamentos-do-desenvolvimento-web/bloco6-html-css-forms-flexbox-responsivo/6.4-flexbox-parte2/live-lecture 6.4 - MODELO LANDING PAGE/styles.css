@@ -1,0 +1,176 @@
+/* INICIALIZAÇÃO DE ESTILOS ZERADOS! */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  opacity: 0.8;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+/* FINAL DA INICIALIZAÇÃO DE ESTILOS */
+
+header img {
+  width: 200px;
+}
+
+.hero {
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.hero h1 {
+  font-size: 3.2em;
+  margin-bottom: 15px;
+}
+
+.hero h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.hero .button {
+  background-color: white;
+  border-radius: 3px;
+  color: #191c03;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+
+.know-the-hotel {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.know-the-hotel h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #191c03;
+}
+
+.know-the-hotel p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #191c03;
+}
+
+.know-the-hotel hr {
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
+  border: none;
+  background-color: #191c03;
+}
+
+.know-the-hotel .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.know-the-hotel .grid img {
+  height: 350px;
+  width: 100px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.know-the-hotel .grid img.small {
+  flex-basis: 40%;
+  /* width: 40%; */
+}
+
+.know-the-hotel .grid img.large {
+  flex-basis: 60%;
+  /* width: 60%; */
+}
+
+.features {
+  background-color: #191c03;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  text-align: center;
+  color: white;
+}
+
+.features p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: white;
+}
+
+.features hr {
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
+  border: none;
+  background-color: white;
+}
+
+.features .grid {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.features .grid li {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.features .grid li i {
+  color: #c3c63b;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.features .grid li h4 {
+  font-size: 1.5rem;
+  color: #c3c63b;
+  margin-bottom: 30px;
+}
