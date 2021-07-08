@@ -73,3 +73,82 @@ const fetch = require('node-fetch');
 // }
 
 // sendJokeToFriend("Anna");
+
+
+// -------------
+
+// const getPokemonPromise = (pokemonName) => {
+//   return new Promise((resolve, reject) => {
+//     if (pokemonName === 'squirtle') {
+//       reject('Esse pokemon não é aceito nesse game!'); // deu ruim!
+//     } else {
+//       fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)  // retorna uma promise
+//         .then((response) => {
+//           response.json().then((jsonDoPokemon) => {
+//             appendPokemon(jsonDoPokemon);
+//             resolve(); // deu bom! concluído com sucesso!
+//           })
+//         });
+//     }
+//   });
+// };
+
+// const fetchPokemonPromise = async () => {
+//   try {
+//     await getPokemonPromise('pikachu');
+//     await getPokemonPromise('rattata');
+//     await getPokemonPromise('squirtle');
+//     await getPokemonPromise('kakuna');
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// window.onload = fetchPokemonPromise();
+
+// -----------------------
+
+// const API_URL = 'https://icanhazdadjoke.com/';
+
+// const fetchJoke = () => {
+//   fetch(API_URL, { headers: { Accept: 'application/json' } })
+//     .then(response => response.json())
+//     .then(data =>
+//       document.getElementById('jokeContainer').innerText = data.joke
+//     );
+// }
+
+// onload = () => fetchJoke();
+
+
+// ------------------
+
+
+const sumRandomNumbers = () => {
+  const myArray = Array.from(
+    { length: 10 },
+    () => Math.floor(Math.random() * 50) + 1
+  );
+  const sum = myArray.map(number => number * number)
+    .reduce((number, acc) => number + acc, 0);
+
+  if (sum >= 8000) {
+    throw new Error();
+  }
+
+  return sum;
+}
+
+const sumArrayFromSum = (sum) => [2, 3, 5, 10].map(number => sum / number)
+  .reduce((number, acc) => number + acc);
+
+const fetchPromise = async () => {
+  try {
+    const sum = await sumRandomNumbers();
+    const sumFromSum = await sumArrayFromSum(sum);
+  } catch (error) {
+    console.log('É mais de oito mil! Essa promise deve estar quebrada!');
+  }
+}
+
+fetchPromise();
