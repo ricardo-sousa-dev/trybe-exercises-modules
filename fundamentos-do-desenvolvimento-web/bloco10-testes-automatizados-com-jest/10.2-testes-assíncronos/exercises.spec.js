@@ -1,4 +1,4 @@
-const { encode, decode, techList} = require("./exercises.js");
+const { encode, decode, techList, uppercase, getUserName, users} = require("./exercises.js");
 
 
 describe("verifica a conversão de valores na função encode()", () => {
@@ -70,5 +70,62 @@ describe('Testa a função techList', () => {
   });
   it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
     expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
+});
+
+
+describe("verifica a chamada da função uppercase()", () => {
+it(`uppercase 'test' to equal 'TEST'`, (done) => {
+  uppercase('test', (str) => {
+    expect(str).toBe('TEST');
+    done();
+  });
+});
+});
+
+describe('test se a função getUserName() retorna o usuario', () => {
+
+  beforeEach(() => {
+    users = [
+      { name: 'Zezé Gamer' },
+      { name: 'Tio Jest' },
+      { name: 'Sumo Lhama' }
+    ]
+  });
+
+  afterEach(() => {
+    users.forEach(element => {
+      if((element.name === 'Zezé Gamer')
+        || (element.name === 'Tio Jest')
+        || (element.name === 'Sumo Lhama')) {
+        delete element;
+      }
+    });
+  });
+
+  test('buscando usuário através do id', async () => {
+
+    const usuario1 = await getUserName('Zezé Gamer');
+    expect(usuario1).toEqual({
+name: 'Zezé Gamer'});
+  });
+});
+
+
+// ANIMAIS
+describe('Testando promise - findAnimalByAge', () => {
+  describe('Quando existe o animal com o a idade', () => {
+    test('Verifique o primeiro nome do animal no array retornado', () => {
+      expect.assertions(1);
+      const animals = [{ name: 'Preguiça', age: 5, type: 'Cat' }];
+      return expect(getAnimalByAge(5)).resolves.toEqual(animals);
+    });
+  });
+
+  describe('Quando não existe o animal com o nome procurado', () => {
+    test('Retorna um erro', () => {
+      expect.assertions(1);
+      return expect(getAnimalByAge(3)).rejects.toBe('Nenhum animal encontrado!');
+    });
   });
 });
