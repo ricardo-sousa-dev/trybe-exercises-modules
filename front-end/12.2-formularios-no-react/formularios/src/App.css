@@ -1,0 +1,53 @@
+div#root {
+  display: flex;
+  justify-content: center;  
+}
+
+App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.divForm {
+  width: 70%;
+  padding-top: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.itemForm {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  /* border: ridge; */
+}
+
+label {
+  margin: 10px 10px;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+align-content: flex-start;
+justify-content: space-between;
+}
+
+input, textarea, option, fieldset{
+  border: 2px solid black;
+}
